@@ -2,13 +2,13 @@
 ; BIND reverse data file for local loopback interface
 ;
 $TTL	604800
-@	IN	SOA	serveur-test.linux.man root.linux.man (
+@	IN	SOA	srv-boss.linux.man root.linux.man (
 			      1		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			 604800 )	; Negative Cache TTL
 ;
-@	IN	NS	serveur-test.
+@	IN	NS	srv-boss.
 40.16.16	IN	PTR	serveur-test.linux.man
-
+100.16.16 IN	PTR srv-boss.linux.man
